@@ -251,9 +251,9 @@ void setup() {
   pinMode(2, OUTPUT);
   delay(50);
   digitalWrite(2, HIGH);
-  
+
   EEPROM.begin(4096);
-  
+
   settings.load();
   if (debug) settings.info();
   nameList.load();
@@ -261,6 +261,7 @@ void setup() {
 
   Serial.println("");
   Serial.println("starting...");
+  Serial.println("MARF EDITION");
 
   startWifi();
   attack.stopAll();
